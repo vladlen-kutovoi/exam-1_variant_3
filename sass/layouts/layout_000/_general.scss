@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-color: $blueDeepColor;
+}
+
+p {
+  font-family: 'Lato', 'Tahoma', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: $whiteColor;
+  opacity: 0.8;
+}
+
+.title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: $whiteColor;
+}
+
+i {
+  font-style: italic;
+  color: $blueColor;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
