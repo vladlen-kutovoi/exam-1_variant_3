@@ -1,0 +1,44 @@
+.quote {
+  .container {
+    background-image: url('../img/quote-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-wrapper {
+    max-width: 710px;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-image: url('../img/quote-icon.svg');
+      width: 102px;
+      height: 84px;
+      position: absolute;
+      top: -40px;
+      left: -20px;
+    }
+  }
+
+  &__citation {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    opacity: 1;
+    margin-bottom: 42px;
+    letter-spacing: 0.04em;
+  }
+
+  &__author {
+    font-family: $playfairFont;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,28 @@
+.overlap {
+  position: relative;
+  padding-top: 45px;
+  display: flex;
+  justify-content: flex-end;
+
+  &__img {
+    display: flex;
+    width: 80%;
+    max-width: 570px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: -1;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    max-width: 770px;
+    padding: 15px 5px 15px 15px;
+    background-color: $blueDeepTransparentColor;
+    position: relative;
+    z-index: 1;
+  }
+}

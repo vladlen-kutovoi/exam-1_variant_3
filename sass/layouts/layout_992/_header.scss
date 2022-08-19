@@ -1,0 +1,52 @@
+.header {
+  top: 30px;
+
+  .container {
+    padding: 5px 15px;
+  }
+}
+
+.main-menu {
+  flex-direction: row;
+  align-items: center;
+  min-height: auto;
+  width: auto;
+  padding: 0;
+  position: static;
+  background-color: transparent;
+
+  &__item {
+    position: relative;
+    padding: 0 2px 0 1px;
+
+    &:not(:last-of-type) {
+      margin: 0 30px 0 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -7px;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+      opacity: 0.3;
+      transition: all .3s ease;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &_active::after {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,19 @@
+.overlap {
+  justify-content: flex-start;
+  padding-top: 0;
+
+
+  &__img {
+    position: relative;
+    left: 0;
+  }
+
+  &__text-block {
+    flex-wrap: nowrap;
+    padding: 46px 5px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}

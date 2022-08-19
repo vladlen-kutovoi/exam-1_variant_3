@@ -1,0 +1,12 @@
+.features {
+  .overlap {
+    &__text-block {
+      padding: 75px 0 75px 70px;
+    }
+  }
+}
+
+.features-block {
+  grid-template-columns: 300px 300px;
+  grid-gap: 70px 100px;
+}

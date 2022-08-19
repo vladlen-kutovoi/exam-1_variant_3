@@ -1,0 +1,23 @@
+.benefits-list {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 90px 30px;
+
+  &__item {
+    min-height: 250px;
+    padding: 20px 40px;
+    position: relative;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $blueColor;
+        position: absolute;
+        top: -30px;
+        left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.quote {
+  .text-wrapper {
+
+    &::after {
+      top: -30px;
+      left: -60px;
+    }
+  }
+}

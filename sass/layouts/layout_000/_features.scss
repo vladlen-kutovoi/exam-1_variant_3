@@ -1,0 +1,60 @@
+.features {
+  .overlap {
+    &__img {
+      max-width: 600px;
+    }
+  }
+}
+
+.features-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 70px;
+
+  .text-wrapper {
+    min-height: 115px;
+    padding-top: 11px;
+  }
+
+  h4 {
+    font-family: $playfairFont;
+    font-weight: 400;
+    font-size: 24px;
+    color: $whiteColor;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid $grayDarkColor;
+    text-decoration: none;
+    transition: all .15s ease;
+
+    &:hover,
+    &:focus {
+      border-color: $greenNeonDarkColor;
+
+      .cta-button {
+        color: $greenNeonDarkColor;
+
+        &::after {
+          background-color: $greenNeonDarkColor;
+        }
+      }
+    }
+  }
+}

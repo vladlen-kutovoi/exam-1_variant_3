@@ -1,0 +1,8 @@
+.testimonials {
+  grid-template-columns: repeat(3, minmax(295px, 370px));
+  grid-gap: 30px;
+
+  &__item {
+    min-height: 340px;
+  }
+}

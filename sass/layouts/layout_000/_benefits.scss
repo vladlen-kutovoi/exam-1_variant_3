@@ -1,0 +1,14 @@
+.benefits-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
+
+  &__item {
+    max-width: 570px;
+  }
+
+  .title {
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+}
