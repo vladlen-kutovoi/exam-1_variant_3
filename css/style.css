@@ -220,10 +220,6 @@ section {
   overflow-y: hidden;
 }
 
-img {
-  width: 100%;
-}
-
 .menu-button {
   display: flex;
   flex-direction: column;
@@ -293,6 +289,9 @@ img {
   top: 0;
   left: 15px;
   z-index: -1;
+}
+.overlap__img img {
+  width: 100%;
 }
 .overlap__text-block {
   display: flex;
@@ -689,9 +688,18 @@ img {
   min-height: 86px;
   padding: 30px 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: center;
 }
-.footer .container *:not(:last-child) {
+.footer .container > *:not(:first-child) {
+  margin-bottom: 30px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__nav__item:not(:last-of-type) {
   margin-bottom: 30px;
 }
 .footer p {
@@ -770,11 +778,18 @@ img {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer .container *:not(:last-child) {
+  .footer .container > *:not(:first-child) {
+    margin-bottom: 0;
+  }
+  .footer .container > *:first-child, .footer .container > *:not(:last-child) {
     margin: 0 30px 0 0;
   }
   .footer__nav {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer__nav__item:not(:last-of-type) {
+    margin: 0 30px 0 0;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -810,7 +825,9 @@ img {
   .main-menu {
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     min-height: auto;
+    max-width: 840px;
     width: auto;
     padding: 0;
     position: static;

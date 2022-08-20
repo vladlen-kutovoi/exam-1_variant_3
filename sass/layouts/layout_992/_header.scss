@@ -9,7 +9,9 @@
 .main-menu {
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   min-height: auto;
+  max-width: 840px;
   width: auto;
   padding: 0;
   position: static;
