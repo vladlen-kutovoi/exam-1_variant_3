@@ -186,7 +186,9 @@ section {
 }
 
 .cta-button {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  width: 80%;
   font-family: "Lato", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -565,6 +567,11 @@ section {
   text-decoration: none;
   transition: all 0.15s ease;
 }
+.features-block__button .cta-button {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: auto;
+}
 .features-block__button:hover, .features-block__button:focus {
   border-color: #02E0AB;
 }
@@ -686,7 +693,6 @@ section {
 .contacts .contact-form button {
   background-color: transparent;
   border: none;
-  width: 173px;
   padding: 0;
   cursor: pointer;
 }
@@ -737,6 +743,11 @@ section {
 }
 
 @media only screen and (min-width: 576px) {
+  .cta-button {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: auto;
+  }
   .tablet {
     padding-right: 70px;
   }
@@ -753,6 +764,9 @@ section {
     width: 33px;
     height: 35px;
     left: 49px;
+  }
+  .contacts .contact-form button {
+    width: 173px;
   }
 }
 @media only screen and (min-width: 768px) {

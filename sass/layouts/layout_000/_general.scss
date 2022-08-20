@@ -56,7 +56,9 @@ section {
 }
 
 .cta-button {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  width: 80%;
   font-family: $latoFont;
   font-style: normal;
   font-weight: 700;

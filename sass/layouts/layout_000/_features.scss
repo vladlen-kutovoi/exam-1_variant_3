@@ -44,6 +44,12 @@
     text-decoration: none;
     transition: all .15s ease;
 
+    .cta-button {
+      display: inline-flex;
+      justify-content: flex-start;
+      width: auto;
+    }
+
     &:hover,
     &:focus {
       border-color: $greenNeonDarkColor;
