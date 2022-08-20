@@ -277,17 +277,18 @@ section {
 
 .overlap {
   position: relative;
-  padding-top: 45px;
+  padding-top: 300px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .overlap__img {
   display: flex;
-  width: 80%;
   max-width: 570px;
+  width: 100%;
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
 }
 .overlap__img img {
@@ -297,9 +298,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   max-width: 770px;
-  padding: 15px 5px 15px 15px;
+  padding: 15px;
   background-color: rgba(22, 25, 38, 0.9);
   position: relative;
   z-index: 1;
@@ -755,6 +756,18 @@ section {
   }
 }
 @media only screen and (min-width: 768px) {
+  .overlap {
+    justify-content: flex-end;
+    padding-top: 45px;
+  }
+  .overlap__img {
+    left: 0;
+    transform: translateX(0);
+  }
+  .overlap__text-block {
+    width: 80%;
+    padding-right: 5px;
+  }
   .benefits-list {
     grid-template-columns: 1fr 1fr;
     grid-gap: 90px 30px;
@@ -812,7 +825,6 @@ section {
   }
   .overlap__img {
     position: relative;
-    left: 0;
   }
   .overlap__text-block {
     flex-wrap: nowrap;

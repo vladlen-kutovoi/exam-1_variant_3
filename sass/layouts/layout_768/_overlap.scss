@@ -1,0 +1,14 @@
+.overlap {
+  justify-content: flex-end;
+  padding-top: 45px;
+
+  &__img {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  &__text-block {
+    width: 80%;
+    padding-right: 5px;
+  }
+}
