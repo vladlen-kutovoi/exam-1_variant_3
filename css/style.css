@@ -633,9 +633,10 @@ section {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .contacts .text-wrapper {
-  max-width: 470px;
+  max-width: 576px;
   padding-top: 21px;
   margin-bottom: 100px;
 }
@@ -644,7 +645,7 @@ section {
   margin-bottom: 28px;
 }
 .contacts .contact-form {
-  max-width: 470px;
+  max-width: 576px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -677,11 +678,16 @@ section {
   outline: none;
   border-color: #fff;
 }
+.contacts .contact-form input[type=text]:focus-visible::placeholder,
+.contacts .contact-form input[type=email]:focus-visible::placeholder {
+  opacity: 0;
+}
 .contacts .contact-form button {
   background-color: transparent;
   border: none;
   width: 173px;
   padding: 0;
+  cursor: pointer;
 }
 
 .footer .container {
